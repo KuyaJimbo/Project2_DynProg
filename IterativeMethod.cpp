@@ -1,5 +1,5 @@
 // Run with:
-// g++ -o align IterativeMethod.cpp
+// g++ -o align Iterative.cpp
 // ./align
 
 #include <iostream> // For cin, cout
@@ -191,6 +191,7 @@ int main() {
     for (char best_move : Array_3D[best_r][best_c][k-1].moves) {
         outputFile << best_move << " ";
     }
+    outputFile << endl;
 
     // -------------- Close the Output File --------------
     outputFile.close();
