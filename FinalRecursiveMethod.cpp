@@ -1,8 +1,8 @@
 // Created by: James Ocampo
 
 // Run with:
-// g++ -o align RecursiveMethod.cpp
-// OR g++ -std=c++11 -o align RecursiveMethod.cpp
+// g++ -o align FinalRecursiveMethod.cpp
+// OR g++ -std=c++11 -o align FinalRecursiveMethod.cpp
 // ./align
 
 #include <iostream> // For cin, cout
