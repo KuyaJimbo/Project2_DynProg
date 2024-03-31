@@ -5,6 +5,10 @@
 #include <iostream> // For cin, cout
 #include <fstream> // For ifstream (file input), ofstream (file output)
 #include <vector> // For vector (dynamic array)
+#include <cmath> // For abs (absolute value)
+#include <utility> // For pair (pair of values)
+#include <algorithm> // For min (minimum value)
+#include <cstdlib> // For exit (exit program)
 
 using namespace std;
 #define INF 1000000 // For infinity
