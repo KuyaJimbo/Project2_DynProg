@@ -1,5 +1,5 @@
 // Run with:
-// g++ -o align IterativeMethod.cpp
+// g++ -std=c++11 -o align IterativeMethod.cpp
 // ./align
 
 #include <iostream> // For cin, cout
