@@ -24,22 +24,6 @@ class Cell {
         vector<char> moves; // The moves to get to the minimum alignment value
 };
 
-ifstream SetUpInputFile() {
-    ifstream inputFile("input.txt");
-    
-    // Check if the file is opened successfully
-    if (!inputFile) {
-        cout << "Unable to open file input.txt" << endl;
-        exit(1);
-    }
-    return inputFile;
-}
-
-ofstream SetUpOutputFile() {
-    ofstream outputFile("output.txt");
-    return outputFile;
-}
-
 // TestPrintFinal is a function that prints the 3D array to the console
 void TestPrintFinal(vector<vector<vector<Cell>>> Array_3D, int k, int m, int n) {
     // display 2D arrays that show the Cell value and the moves for each cell at each move number
@@ -114,10 +98,16 @@ Cell CalculateCell(int r, int c, int move, int k, int m, int n, vector<vector<in
 
 int main() {
     // ----------------- Set up the input file -----------------
-    ifstream inputFile = SetUpInputFile();
+    ifstream inputFile("input.txt");
     
+    // Check if the file is opened successfully
+    if (!inputFile) {
+        cout << "Unable to open file input.txt" << endl;
+        exit(1);
+    }
+
     // -------------- Set up the output file --------------
-    ofstream outputFile = SetUpOutputFile();
+    ofstream outputFile("output.txt");
 
     // -------------- Read the input from the file --------------
     int k; // Length of the sequence
